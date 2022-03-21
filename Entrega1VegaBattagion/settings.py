@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    'index']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Entrega1VegaBattagion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\valen\Desktop\Entrega1VegaBattagion\index\plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
