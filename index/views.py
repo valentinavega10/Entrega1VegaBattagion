@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 from django.template import loader
 from AppOrg import views
 
@@ -8,13 +9,19 @@ def index(request):
     return HttpResponse('<h1>Bienvenidos a la página del Congreso Argentino de Etnobiología </h1>')
 
 def plantilla(request):
-    template = loader.get_template('plantilla.html')
+
+    lista= ['primero', 
+            'segundo', 
+            'tercero',]
+    
+    nombre='Valentina'
     
     datos={
-        'lista':['primero', 'segundo', 'tercero',],
-        'nombre':'Valentain'
+        'nombre':nombre,
+        'lista': lista,
     }
-
-    plantilla_generada = template.render(datos)
+        
+    #plantilla_generada = template.render(datos)
     
-    return HttpResponse(plantilla_generada)
+    #return HttpResponse(plantilla_generada)
+    return render(request, "plantilla.html", datos )
