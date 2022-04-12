@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.template import loader
 from AppOrg.models import Congreso
+from AppOrg import views
 # Create your views here.
 
 def nuevo_congreso(request):
