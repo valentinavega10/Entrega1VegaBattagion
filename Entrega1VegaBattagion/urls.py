@@ -18,6 +18,6 @@ from django.urls import path, include
 from AppOrg import views
 urlpatterns = [
     path('',include("index.urls")),
-    path('nuevo/',include("AppOrg.urls")),
+    path('AppOrg/',include("AppOrg.urls")),
     path('admin/', admin.site.urls),
 ]
