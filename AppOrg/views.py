@@ -13,20 +13,20 @@ def nuevo_congreso(request):
 
 def inicio(request):
     
-    return HttpResponse('vista inicio')
+    return render(request, "AppOrg/inicio.html")
 
 def congresos (request):
     
-    return HttpResponse ('vista congresos')
+    return render(request, "AppOrg/congresos.html")
 
 def expositores (request):
     
-    return HttpResponse ('vista expositores')
+    return render(request, "AppOrg/expositores.html")
 
 def oyentes (request):
     
-    return HttpResponse ('vista oyentes')
+    return render(request, "AppOrg/oyentes.html")
 
 def simposios (request):
     
-    return HttpResponse ('vista simposios')
+    return render(request, "AppOrg/simposios.html")

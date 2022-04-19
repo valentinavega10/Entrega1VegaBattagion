@@ -23,5 +23,10 @@ def plantilla(request):
         
     #plantilla_generada = template.render(datos)
     
+    #versión nueva con loader
+    #template=loader.get_template("mi_plantilla.html")
+    #plantilla_preparada= template.render(datos)
+    #return HttpResponse (plantilla_preparada)
+    
     #return HttpResponse(plantilla_generada)
-    return render(request, "plantilla.html", datos )
+    return render(request, "plantilla.html")
