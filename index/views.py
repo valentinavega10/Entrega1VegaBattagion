@@ -29,4 +29,4 @@ def plantilla(request):
     #return HttpResponse (plantilla_preparada)
     
     #return HttpResponse(plantilla_generada)
-    return render(request, "plantilla.html")
+    return render(request, "plantilla.html", datos)
