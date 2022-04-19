@@ -6,7 +6,7 @@ from AppOrg import views
 # Create your views here.
 
 def index(request):
-    return HttpResponse('<h1>Bienvenidos a la página del Congreso Argentino de Etnobiología </h1>')
+    return render(request, "index.html")
 
 def plantilla(request):
 
